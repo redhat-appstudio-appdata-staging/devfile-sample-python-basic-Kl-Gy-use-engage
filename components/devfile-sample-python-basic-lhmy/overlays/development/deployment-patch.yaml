@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-lhmy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/cqi-tenant/devfile-sample-python-basic/devfile-sample-python-basic-lhmy@sha256:29538a75ad5ca09a6c787b94223905630c6ade3efaad354eb7acba548c48bc13
+        name: my-python
+        resources: {}
+status: {}
